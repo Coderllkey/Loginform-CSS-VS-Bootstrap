@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form from scratch</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .link{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            position: absolute;
+            right: 150px;
+            top: 200px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 20px;
+        }
+        .link:hover{
+            border: 5px solid orange;
+            transform: scale(1.1);
+        }
+        
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <form action="">
+            <div class="header">
+
+                <h1 class="title red">Just say hello !</h1>
+                <p class="title-sub white">We want to know more about you !</p>
+            </div>
+            <div class="content">
+                <div><input type="text" placeholder="Name" class="input input-color white">
+                <input type="number" class="input input-color number white" placeholder="Phone number"></div>
+               <div> <input type="email" class="input input-color white" placeholder="Email">
+               <input type="file" multiple="multiple" class="input-file input-color white"></div>
+        
+               <div class="check">   <input  type="checkbox"> <span class="white text">Remember me</span></div>
+               <div class="tt-div"> <textarea class="tt input-color" cols="45" rows="6" placeholder="Message"></textarea>  </div>
+               <button class="white">SUBMIT</button>
+        
+            </div>
+    
+        </form>
+        
+    </div>
+    
+    <div class="link">
+        <a href="index.html"> &lt;= BS</a>
+      </div>
+</body>
+</html>
